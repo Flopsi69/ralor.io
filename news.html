@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Title</title>
+	<meta name="keywords" content=""> 
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,500,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="status">
+      <div class="status-mes"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-send" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+          <h2 class="title firm-labe">Написать нам письмо</h2>
+          <div class="sub">Пояснительный текст для формы</div>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form-send">
+            <div class="form-group">
+              <input class='form-control' type="text" placeholder="Представьтесь, пожалуйста*" required>
+            </div>
+            <div class="form-group">
+              <input class='form-control' type="tel" placeholder="Ваш телефон">
+            </div>
+            <div class="form-group">
+              <input class='form-control' type="email" placeholder="Ваш E-mail*" required>
+            </div>
+            <div class="form-group">
+              <input class='form-control' type="text" placeholder="Тема письма*" required>
+            </div>
+            <div class="form-group">
+              <textarea class='form-control' name="" id="" cols="30" rows="10" placeholder="Текст письма*" required="required"></textarea>
+            </div>
+            <button type="submit" class="btn">отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-callback" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+          <h2 class="title firm-labe">Обратный звонок</h2>
+          <div class="sub">Пояснительный текст для формы</div>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form-send">
+            <div class="form-group">
+              <input class='form-control' type="text" placeholder="Представьтесь, пожалуйста*" required>
+            </div>
+            <div class="form-group">
+              <input class='form-control' type="tel" placeholder="Ваш телефон">
+            </div>
+            <button type="submit" class="btn">отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-subscribe" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><img src="img/close.png" alt=""></button>
+          <h2 class="title firm-labe">Подписка на новости</h2>
+          <div class="sub">Пояснительный текст для формы</div>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form-send">
+            <div class="form-group">
+              <input class='form-control' type="email" placeholder="Введите Ваш E-mail*" required>
+            </div>
+            <button type="submit" class="btn">отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <!-- Left -->
+        <div class="col-md-5 col-xs-6">
+          <div class="logo h_block">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+          </div>
+          <div class="losung h_block">
+            <div class="abr-line"><span class="abr-letter">Р</span>азумные</div>
+            <div class="abr-line"><span class="abr-letter">А</span>вторитетные</div>
+            <div class="abr-line"><span class="abr-letter">Л</span>огичные</div>
+            <div class="abr-line"><span class="abr-letter">О</span>рганизационные</div>
+            <div class="abr-line"><span class="abr-letter">Р</span>ешения</div>
+            <div class="losung-sub">
+              для автомобильного бизнеса
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-md-7 col-xs-6">
+          <!-- Links -->
+          <div class="h_links h_block">
+            <a href='#' class="link link-send" data-toggle="modal" data-target="#modal-send"><img src="img/link-send.png" alt="">Написать нам</a>
+            <a href='#' class="link link-call" data-toggle="modal" data-target="#modal-callback"><img src="img/link-call.png" alt="">Обратный звонок</a>
+          </div>
+
+          <!-- Contacts data -->
+          <div class="h_contacts h_block">
+            <a id='h_tel' href="tel: +7 (495) 665-79-30"><span>+7 (495) </span>665-79-30</a>
+            <a id='h_mail' href="mailto: ralor@ralor.ru">ralor@ralor.ru</a>
+          </div>
+
+          <!-- Fill Application -->
+          <div class="h_app h_block">
+            <button class="btn btn-app btn-yel">заявка на услуги</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-app-toggle btn-yel">заявка на услуги</button>
+      </div>
+    </div>
+
+    <div class="navbar-wrap">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-nav navbar-right navbar-right-mob">
+          <div class="h_contacts h_block">
+            <a id='h_tel' href="tel: +7 (495) 665-79-30"><span>+7 (495) </span>665-79-30</a>
+            <a id='h_mail' href="mailto: ralor@ralor.ru">ralor@ralor.ru</a>
+          </div>
+        </div>
+        <nav id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Партнеры</a></li>  
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="navbar-nav navbar-right">
+            <div class="socials">
+              <a href="#" id='soc-vk'></a>
+              <a href="#" id='soc-fb'></a>
+              <a href="#" id='soc-instagram'></a>
+            </div>
+            <form class="navbar-form" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+              </div>
+              <button type="submit" class="btn"><img src="img/search-btn.png" alt=""></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="navbar-scroll">
+      <div class="container">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> -->
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+        <nav id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Партнеры</a></li>  
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="navbar-nav navbar-right">
+            <div class="h_contacts h_block">
+              <a id="h_tel" href="tel: +7 (495) 665-79-30"><span>+7 (495) </span>665-79-30</a>
+              <a id="h_mail" href="mailto: ralor@ralor.ru">ralor@ralor.ru</a>
+            </div>
+            <div class="h_app h_block">
+              <button class="btn btn-app btn-yel">заявка на услуги</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="container">
+      <!-- Section news -->
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="active">Пример</li>
+      </ol>
+      <section class='section news'>
+        <h1>Новости компании «Ралор»</h1>
+        <div class="sub">
+          Здесь будет пояснение к разделу с новостями
+        </div>
+
+        <ul class="sub-links">
+          <li><a href="#" data-toggle="modal" data-target="#modal-subscribe">Подписаться на новости</a></li>
+        </ul>
+
+
+        <ul class="list-news">
+          <li class="news-block">
+              <div class="pub-date">
+                <span>27.07.2017</span>
+              </div>
+              <a href='#' class="title">Шинный центр Болотная площадь 10 (заголовок в две строки)</a>
+              <p class="descr">
+                Открыт шинный центр ООО "Ралор" по адресу: Москва, Болотная площадь 10. Шиномонтаж, ремонт шин, правка дисков, заправка кондиционера...
+              </p>
+          </li>
+
+          <li class="news-block">
+              <div class="pub-date">
+                <span>27.07.2017</span>
+              </div>
+              <a href='#' class="title">Шинный центр Болотная площадь 10 (заголовок в две строки)</a>
+              <p class="descr">
+                Открыт шинный центр ООО "Ралор" по адресу: Москва, Болотная площадь 10. Шиномонтаж, ремонт шин, правка дисков, заправка кондиционера...
+              </p>
+          </li>
+
+          <li class="news-block">
+              <div class="pub-date">
+                <span>27.07.2017</span>
+              </div>
+              <a href='#' class="title">Шинный центр Болотная площадь 10 (заголовок в две строки)</a>
+              <p class="descr">
+                Открыт шинный центр ООО "Ралор" по адресу: Москва, Болотная площадь 10. Шиномонтаж, ремонт шин, правка дисков, заправка кондиционера...
+              </p>
+          </li>
+
+          <li class="news-block">
+              <div class="pub-date">
+                <span>27.07.2017</span>
+              </div>
+              <a href='#' class="title">Шинный центр Болотная площадь 10 (заголовок в две строки)</a>
+              <p class="descr">
+                Открыт шинный центр ООО "Ралор" по адресу: Москва, Болотная площадь 10. Шиномонтаж, ремонт шин, правка дисков, заправка кондиционера...
+              </p>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Footer logo -->
+        <div class="col-md-1 visible-lg">
+          <a href="index.html" class='f_logo'><img src="img/logo.png" alt=""></a>
+        </div>
+        <!-- Footer info -->
+        <div class="col-md-6 col-sm-5 f_info">
+          <div class="copyright">&copy; 2009 «Ралор». Все права защищены</div>
+          <div class="f_contacts">
+            109548, Россия, г. Москва, ул. Шоссейная, д. 1К<br>
+            Телефон: <a href="tel: +7 (495) 665-79-30">+7 (495) 665-79-30</a>
+          </div>
+          <a href="#" id="sitemap">Карта сайта</a>
+        </div>
+
+        <!-- Footer nav -->
+        <div class="col-md-6 col-sm-7 col-lg-5 f_menu">
+          <nav class="nav footer-nav text-right">
+            <a href="#">О компании</a>
+            <a href="#">Услуги</a>
+            <a href="#">Новости</a>
+            <a href="#">Партнеры</a>
+            <a href="#">Контакты</a>
+          </nav>
+          <div class="stat text-right">
+            <img src="img/stat.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src='js/vendor/jquery-3.2.1.min.js'></script>
+  <script src='js/vendor/bootstrap.min.js'></script>
+  <script src='js/vendor/jquery-ui.min.js'></script>
+  <script src='js/vendor/slick.min.js'></script>
+  <script src='js/script.js'></script>
+
+</body>
+</html>
